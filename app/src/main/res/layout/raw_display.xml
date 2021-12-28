@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/matCard"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="18dp">
+
+        <TextView
+            android:id="@+id/rawMarque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple_700"
+            android:text="Marque"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rawModel"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            android:text="Model"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/rawClicked"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:textColor="#F80202"
+            android:textSize="11sp"
+            android:textStyle="bold"/>
+
+
+        <ImageView
+            android:id="@+id/rawModificate"
+            android:layout_marginTop="7dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_change_circle_24"
+            android:layout_marginLeft="320dp"/>
+
+
+        <ImageView
+            android:id="@+id/rawImgDelete"
+            android:layout_marginTop="7dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:layout_gravity="right"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

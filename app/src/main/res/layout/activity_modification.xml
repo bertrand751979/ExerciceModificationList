@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFICATION"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="90dp"
+        android:id="@+id/matCard"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:cardCornerRadius="18dp">
+
+        <EditText
+            android:id="@+id/modMarque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/purple_700"
+            android:text="Marque"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/modModel"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            android:text="Model"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/modButtonSav"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="240dp"
+            android:text="save" />
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
